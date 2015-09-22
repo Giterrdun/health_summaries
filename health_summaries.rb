@@ -5,16 +5,16 @@ module HealthSummaries
 		file.max
 	end
 
-	def min(array)
-		array.min  
+	def min(file)
+		file.min  
 	end
 
-	def mean(file)
+	def mean(array)
 		y = 0
-		for x in 0...file.length	
-			y += x
+		for x in 0...array.length	
+			y += array[x]
 		end
-		y / file.length
+		y / array.length 
 	end
 
 

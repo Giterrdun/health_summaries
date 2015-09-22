@@ -23,6 +23,10 @@ class HealthSummariesTest < MiniTest::Test
 		assert_equal -10, @m.min([-1, -2, -3 ,-4, -5, -6 ,-7 ,-8 ,-10])
 		
 	end
+	def test_mean
+		assert_equal 5, @m.mean([0,10])
+		assert_equal 25, @m.mean([0, 0, 0, 100])
+	end
 end
 
 
