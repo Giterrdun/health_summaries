@@ -1,12 +1,12 @@
 module HealthSummaries
 # file = File.open("data.csv", 'r')
 
-	def max(array)
-		array.max
+	def max(file)
+		file.max
 	end
 
-	def min(file)
-		file.min  
+	def min(array)
+		array.min  
 	end
 
 	def mean(file)
@@ -23,4 +23,3 @@ module HealthSummaries
  
 end
 
- 
